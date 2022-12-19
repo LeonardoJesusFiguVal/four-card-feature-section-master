@@ -1,0 +1,124 @@
+/*Movile 440px Desktop 1200px*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --grey: hsl(0, 0%, 87%);
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Main Style*/
+.mainStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Style header*/
+.pageHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageHeader h1,
+.pageHeader h2{
+    margin: 2rem;
+    font-weight: 400;
+}
+
+.pageHeader h1{
+    font-weight: 600;
+}
+
+.pageHeader h1 span{
+    font-weight: 200;
+}
+
+/*Style content*/
+.content{
+    display: grid;
+    gap: 1rem;
+    margin: 2rem;
+    
+}
+
+.content__box--red{
+    border-top: 0.4rem solid var(--red);
+}
+
+.content__box--cyan{
+    border-top: 0.4rem solid var(--cyan);
+}
+
+.content__box--orange{
+    border-top: 0.4rem solid var(--orange);
+}
+
+.content__box--blue{
+    border-top: 0.4rem solid var(--blue);
+}
+
+.content__box h3{
+    font-weight: 200;
+}
+
+.content__box{
+    box-shadow: 0.4rem 0.4rem 0.5rem var(--grey);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+
+.content__box__image--supervisor{
+    background-image: url(../images/icon-supervisor.svg);
+    height: 7rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.content__box__image--teamBuilder{
+    background-image: url(../images/icon-team-builder.svg);
+    height: 7rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.content__box__image--karma{
+    background-image: url(../images/icon-karma.svg);
+    height: 7rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.content__box__image--calculator{
+    background-image: url(../images/icon-calculator.svg);
+    height: 7rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+/*Style Frontend Mentor*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
